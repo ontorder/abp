@@ -1,12 +1,12 @@
 ﻿# Dependency Injection
 
-ABP's Dependency Injection system is developed based on Microsoft's [dependency injection extension](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection) library (Microsoft.Extensions.DependencyInjection nuget package). So, it's documentation is valid in ABP too.
+ABP's Dependency Injection system is developed based on Microsoft's [dependency injection extension](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection) library (Microsoft.Extensions.DependencyInjection nuget package). So, its documentation is valid in ABP too.
 
 > While ABP has no core dependency to any 3rd-party DI provider, it's required to use a provider that supports dynamic proxying and some other advanced features to make some ABP features properly work. Startup templates come with Autofac installed. See [Autofac integration](Autofac-Integration.md) document for more information.
 
 ## Modularity
 
-Since ABP is a modular framework, every module defines it's own services and registers via dependency injection in it's own seperate [module class](Module-Development-Basics.md). Example:
+Since ABP is a modular framework, every module defines its own services and registers via dependency injection in its own seperate [module class](Module-Development-Basics.md). Example:
 
 ````C#
 public class BlogModule : AbpModule
